@@ -53,7 +53,8 @@ class PythonTool(BaseTool):
                     print(f"file is not a string. Skipping.")
                     continue
 
-                abs_file_path = "/data/USTCAGI2/jcProject/Table-Agent-main/data/eval_files/" + file
+                #TODO: change to your file path
+                abs_file_path = "/your_file_path_here/" + file
 
                 if not os.path.exists(abs_file_path):
                     file_dict[file] = None

@@ -46,3 +46,28 @@ Large Language Models (LLMs) demonstrate impressive capabilities but often strug
 *   **Two-Stage Training Paradigm:** Combines warm-up Supervised Fine-tuning (SFT) to establish foundational tool-use patterns with Reinforcement Fine-tuning (RFT) for advanced, autonomous strategy optimization.
 *   **RAPO: Rank-Aware Policy Optimization:** A novel reinforcement learning algorithm that increases the update weight of high-quality reasoning trajectories.
 *   **Multi-Objective Reward Design:** Employs a fine-grained reward function composed of three key components—structural correctness, final answer accuracy, and strategic tool interaction—to effectively guide the agent's learning process.
+
+## 🚀 Quick Start
+### Environment Setup
+
+#### TableMind Environment
+
+```bash
+conda env create -f environment.yml
+```
+
+#### Sandbox Fusion
+
+1. **Install Sandbox Fusion**  
+2. **Run Sandbox Fusion in a tmux session**  
+Please follow the official installation guide here: [SandboxFusion](https://github.com/bytedance/SandboxFusion)
+
+## 🛠️ Training
+### Time-R1 RL Training
+
+1. Extract the files under the `csv_files` directory.
+2. Update the CSV file path in the `agent_r1/tool/tools/python_tool.py` file.
+```bash
+# Run training
+bash run.sh
+```
